@@ -13,6 +13,7 @@
 		11F5F1771ACEBA0A00AF1C57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F5F1761ACEBA0A00AF1C57 /* Images.xcassets */; };
 		11F5F17A1ACEBA0A00AF1C57 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F5F1781ACEBA0A00AF1C57 /* LaunchScreen.xib */; };
 		11F5F1861ACEBA0A00AF1C57 /* zDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F5F1851ACEBA0A00AF1C57 /* zDateTests.swift */; };
+		11F5F1921ACEBC6A00AF1C57 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F5F1911ACEBC6A00AF1C57 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		11F5F17F1ACEBA0A00AF1C57 /* zDateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zDateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F5F1841ACEBA0A00AF1C57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11F5F1851ACEBA0A00AF1C57 /* zDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zDateTests.swift; sourceTree = "<group>"; };
+		11F5F1911ACEBC6A00AF1C57 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				11F5F16F1ACEBA0A00AF1C57 /* AppDelegate.swift */,
+				11F5F1901ACEBC3900AF1C57 /* Views */,
 				11F5F1711ACEBA0A00AF1C57 /* ViewController.swift */,
 				11F5F1731ACEBA0A00AF1C57 /* Main.storyboard */,
 				11F5F1761ACEBA0A00AF1C57 /* Images.xcassets */,
@@ -110,6 +113,14 @@
 				11F5F1841ACEBA0A00AF1C57 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11F5F1901ACEBC3900AF1C57 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11F5F1911ACEBC6A00AF1C57 /* CardView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11F5F1721ACEBA0A00AF1C57 /* ViewController.swift in Sources */,
+				11F5F1921ACEBC6A00AF1C57 /* CardView.swift in Sources */,
 				11F5F1701ACEBA0A00AF1C57 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
