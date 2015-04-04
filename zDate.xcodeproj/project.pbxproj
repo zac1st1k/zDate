@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11C801781AD010F600F1768B /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C801771AD010F600F1768B /* SwipeView.swift */; };
 		11F5F1701ACEBA0A00AF1C57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F5F16F1ACEBA0A00AF1C57 /* AppDelegate.swift */; };
 		11F5F1721ACEBA0A00AF1C57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F5F1711ACEBA0A00AF1C57 /* ViewController.swift */; };
 		11F5F1751ACEBA0A00AF1C57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F5F1731ACEBA0A00AF1C57 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11C801771AD010F600F1768B /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
 		11F5F16A1ACEBA0A00AF1C57 /* zDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F5F16E1ACEBA0A00AF1C57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11F5F16F1ACEBA0A00AF1C57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				11F5F1911ACEBC6A00AF1C57 /* CardView.swift */,
+				11C801771AD010F600F1768B /* SwipeView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11F5F1721ACEBA0A00AF1C57 /* ViewController.swift in Sources */,
+				11C801781AD010F600F1768B /* SwipeView.swift in Sources */,
 				11F5F1921ACEBC6A00AF1C57 /* CardView.swift in Sources */,
 				11F5F1701ACEBA0A00AF1C57 /* AppDelegate.swift in Sources */,
 			);
@@ -419,6 +423,7 @@
 				11F5F18B1ACEBA0A00AF1C57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11F5F18C1ACEBA0A00AF1C57 /* Build configuration list for PBXNativeTarget "zDateTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +432,7 @@
 				11F5F18E1ACEBA0A00AF1C57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
