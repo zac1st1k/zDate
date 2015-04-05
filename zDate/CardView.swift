@@ -34,11 +34,12 @@ class CardView: UIView {
         addSubview(imageView)
         nameLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
         addSubview(nameLabel)
-        backgroundColor = UIColor.whiteColor()
+        backgroundColor = UIColor.greenColor()
         layer.borderWidth = 0.5
         layer.borderColor = UIColor.lightGrayColor().CGColor
         layer.cornerRadius = 5
-        layer.masksToBounds = false
+        layer.masksToBounds = true
+        setConstraints()
     }
     
     private func setConstraints() {
