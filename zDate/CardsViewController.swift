@@ -21,6 +21,7 @@ class CardsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        cardStackView.backgroundColor = UIColor.clearColor()
         backCard = SwipeView(frame: createCardFrame(backCardTopMargin))
         cardStackView.addSubview(backCard!)
         frontCard = SwipeView(frame: createCardFrame(frontCardTopMargin))
