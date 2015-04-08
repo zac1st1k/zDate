@@ -17,6 +17,8 @@ class SwipeView: UIView {
         case Right
     }
     
+    weak var delegate: SwipeViewDelegate?
+    
     private let card: CardView = CardView()
     private var originalPoint: CGPoint?
     
@@ -55,7 +57,12 @@ class SwipeView: UIView {
             center = CGPointMake(originalPoint!.x + distance.x, originalPoint!.y + distance.y)
             
         case UIGestureRecognizerState.Ended:
-            resetViewPositionAndTransformations()
+            if abs(distance.x) < frame.width / 4 {
+                resetViewPositionAndTransformations()
+            }
+            else {
+                swipe(distance.x > 0 ? .Right : .Left)
+            }
         default:
             println("Default trigged for GestureRecognizer")
             break
@@ -70,6 +77,7 @@ class SwipeView: UIView {
         if s == .Left {
             parentWidth *= -1
         }
+        
         UIView.animateWithDuration(0.2, animations: { () -> Void in
             self.center.x = self.frame.origin.x + parentWidth
         })
@@ -81,4 +89,9 @@ class SwipeView: UIView {
             self.transform = CGAffineTransformMakeRotation(0)
         })
     }
+}
+
+protocol SwipeViewDelegate: class {
+    func swipedLeft()
+    func swipedRight()
 }
