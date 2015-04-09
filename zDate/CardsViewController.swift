@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class CardsViewController: UIViewController, SwipeViewDelegate {
     
@@ -31,6 +32,12 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
         cardStackView.addSubview(backCard!.swipeView)
         frontCard = createCard(frontCardTopMargin)
         cardStackView.addSubview(frontCard!.swipeView)
+        
+        let testObject = PFObject(className: "TestObject")
+        testObject["foo"] = "bar"
+        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError!) -> Void in
+            println("Object has been saved.")
+        }
     }
 
     override func didReceiveMemoryWarning() {
