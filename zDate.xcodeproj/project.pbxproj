@@ -22,6 +22,7 @@
 		119CCBA01AD6AE7C007054FB /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 119CCB9F1AD6AE7C007054FB /* libsqlite3.dylib */; };
 		119CCBA31AD6B4CB007054FB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119CCBA11AD6B4CB007054FB /* Parse.framework */; };
 		119CCBA41AD6B4CB007054FB /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119CCBA21AD6B4CB007054FB /* ParseFacebookUtils.framework */; };
+		11BF16861ADBE61000FCBAC9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF16851ADBE61000FCBAC9 /* User.swift */; };
 		11C801781AD010F600F1768B /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C801771AD010F600F1768B /* SwipeView.swift */; };
 		11F5F1701ACEBA0A00AF1C57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F5F16F1ACEBA0A00AF1C57 /* AppDelegate.swift */; };
 		11F5F1721ACEBA0A00AF1C57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F5F1711ACEBA0A00AF1C57 /* ViewController.swift */; };
@@ -60,6 +61,7 @@
 		119CCBA11AD6B4CB007054FB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		119CCBA21AD6B4CB007054FB /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		11A8B73D1AD80478009F9DF6 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		11BF16851ADBE61000FCBAC9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		11C801771AD010F600F1768B /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
 		11F5F16A1ACEBA0A00AF1C57 /* zDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F5F16E1ACEBA0A00AF1C57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -141,6 +143,14 @@
 			path = zDate;
 			sourceTree = "<group>";
 		};
+		11BF16841ADBE5FB00FCBAC9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				11BF16851ADBE61000FCBAC9 /* User.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		11F5F1611ACEBA0A00AF1C57 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				11F5F16F1ACEBA0A00AF1C57 /* AppDelegate.swift */,
+				11BF16841ADBE5FB00FCBAC9 /* Data */,
 				11F5F1901ACEBC3900AF1C57 /* Views */,
 				111690901AD13FCB002CA865 /* ViewControllers */,
 				11F5F1731ACEBA0A00AF1C57 /* Main.storyboard */,
@@ -361,6 +372,7 @@
 				111690921AD14008002CA865 /* CardsViewController.swift in Sources */,
 				11F5F1921ACEBC6A00AF1C57 /* CardView.swift in Sources */,
 				11F5F1701ACEBA0A00AF1C57 /* AppDelegate.swift in Sources */,
+				11BF16861ADBE61000FCBAC9 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
