@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PFFacebookUtils.initializeFacebook()
         var storyboard = UIStoryboard(name: "Main", bundle: nil)
         var initialViewController:UIViewController
-        if PFUser.currentUser() != nil {
+        if currentUser() != nil {
             initialViewController = storyboard.instantiateViewControllerWithIdentifier("CardsNavController") as UIViewController
         }
         else {
