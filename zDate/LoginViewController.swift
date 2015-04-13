@@ -34,7 +34,8 @@ class LoginViewController: UIViewController {
     */
 
     @IBAction func pressedFBLogin(sender: UIButton) {
-        PFFacebookUtils.logInWithPermissions(["public_profile", "user_about_me", "user_birthday"], block: { (user, error) -> Void in
+        PFFacebookUtils.logInWithPermissions(["public_profile", "user_about_me", "user_birthday"], block: {
+            (user, error) -> Void in
             if user == nil {
                 println("The user cancelled the Facebook Login.")
             }

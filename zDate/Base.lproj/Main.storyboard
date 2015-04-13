@@ -62,7 +62,7 @@
         <!--Login View Controller-->
         <scene sceneID="chk-XU-zMx">
             <objects>
-                <viewController id="gfN-C5-6GV" customClass="LoginViewController" customModule="zDate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="gfN-C5-6GV" customClass="LoginViewController" customModule="zDate" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iNS-Km-LfI"/>
                         <viewControllerLayoutGuide type="bottom" id="UYo-uX-46h"/>
@@ -96,7 +96,7 @@
         <!--Navigation Controller-->
         <scene sceneID="jEz-hf-RCh">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Ba-JD-T9b" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="CardsNavController" automaticallyAdjustsScrollViewInsets="NO" id="7Ba-JD-T9b" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xoO-Ns-VYF">
