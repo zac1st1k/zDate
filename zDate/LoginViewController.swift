@@ -46,17 +46,30 @@ class LoginViewController: UIViewController {
                     var r = result as NSDictionary
                     user["firstName"] = r["first_name"]
                     user["gender"] = r["gender"]
-                    user["picture"] = ((r["picture"] as NSDictionary)["data"] as NSDictionary) ["url"]
                     var dateFormatter = NSDateFormatter()
                     dateFormatter.dateFormat = "MM/dd/yyyy"
                     user["birthday"] = dateFormatter.dateFromString(r["birthday"] as String)
-                    user.saveInBackgroundWithBlock({
-                        success, error in
-                        println(success)
-                        println(error)
+                    
+                    let picutreURL = ((r["picture"] as NSDictionary)["data"] as NSDictionary) ["url"] as String
+                    let url = NSURL(string: picutreURL)
+                    let request = NSURLRequest(URL: url!)
+                    NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: { (response, data, error) -> Void in
+                        let imageFile = PFFile(name: "avatar.jpg", data: data)
+                        user["picture"] = imageFile
+                        user.saveInBackgroundWithBlock(nil)
+//                        if (response != nil) {
+//                            println("Success")
+//                        }
+//                        else {
+//                            println(error)
+//                        }
                     })
-                    }
-                )
+//                    user.saveInBackgroundWithBlock({
+//                        success, error in
+//                        println(success)
+//                        println(error)
+//                    })
+                })
             }
             else {
                 println("User logged in through Facebook!")
