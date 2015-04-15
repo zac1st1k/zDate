@@ -44,7 +44,7 @@
         <!--View Controller-->
         <scene sceneID="rBK-gr-Uud">
             <objects>
-                <viewController id="y23-ja-sns" customClass="ViewController" customModule="zDate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PageController" id="y23-ja-sns" customClass="ViewController" customModule="zDate" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lCC-Qo-Irx"/>
                         <viewControllerLayoutGuide type="bottom" id="lev-Ph-zZp"/>
