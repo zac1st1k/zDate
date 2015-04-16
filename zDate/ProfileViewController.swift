@@ -13,6 +13,13 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        navigationItem.titleView = UIImageView(image: UIImage(named: "profile-header"))
+        let rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav-back-button"), style: UIBarButtonItemStyle.Plain, target: self, action: "goToCards:")
+        navigationItem.setRightBarButtonItem(rightBarButtonItem, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,5 +47,8 @@ class ProfileViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    func goToCards(button: UIBarButtonItem) {
+        
+    }
 }

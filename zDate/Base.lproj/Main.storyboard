@@ -63,7 +63,7 @@
         <!--Profile View Controller-->
         <scene sceneID="4Yp-HM-yzu">
             <objects>
-                <viewController storyboardIdentifier="ProfileNavController" id="G29-KY-xL8" customClass="ProfileViewController" customModule="zDate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="G29-KY-xL8" customClass="ProfileViewController" customModule="zDate" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tcy-Mk-lht"/>
                         <viewControllerLayoutGuide type="bottom" id="qif-5k-yCc"/>
@@ -78,7 +78,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pg1-AQ-BMe">
                                 <rect key="frame" x="16" y="439" width="288" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -162,7 +162,7 @@
         <!--Navigation Controller-->
         <scene sceneID="rYc-cZ-o55">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OLT-Gp-aF5" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ProfileNavController" automaticallyAdjustsScrollViewInsets="NO" id="OLT-Gp-aF5" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yr8-k1-e8k">
