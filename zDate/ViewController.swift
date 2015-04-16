@@ -8,6 +8,8 @@
 
 import UIKit
 
+let pageController = ViewController(transitionStyle: UIPageViewControllerTransitionStyle.Scroll, navigationOrientation: UIPageViewControllerNavigationOrientation.Horizontal, options: nil)
+
 class ViewController: UIPageViewController, UIPageViewControllerDataSource {
     
     let cardsVC: UIViewController! = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("CardsNavController") as UIViewController
@@ -38,7 +40,7 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
     
     // MARK: - UIPageViewControllerDataSource
 
-    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
+    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         switch viewController {
         case cardsVC:
             return profileVC
@@ -49,7 +51,7 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
         }
     }
     
-    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
+    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         switch viewController {
         case cardsVC:
             return nil
