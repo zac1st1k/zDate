@@ -33,11 +33,18 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
         frontCard = createCard(frontCardTopMargin)
         cardStackView.addSubview(frontCard!.swipeView)
         
-        let testObject = PFObject(className: "TestObject")
-        testObject["foo"] = "bar"
-        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError!) -> Void in
-            println("Object has been saved.")
-        }
+//        let testObject = PFObject(className: "TestObject")
+//        testObject["foo"] = "bar"
+//        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError!) -> Void in
+//            println("Object has been saved.")
+//        }
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        navigationItem.titleView = UIImageView(image: UIImage(named: "nav-header"))
+        let leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav-back-button"), style: UIBarButtonItemStyle.Plain, target: self, action: "goToProfile:")
+        navigationItem.setLeftBarButtonItem(leftBarButtonItem, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -66,6 +73,10 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
         swipeView.delegate = self
         swipeView.innerView = cardView
         return Card(cardView: cardView, swipeView: swipeView)
+    }
+    
+    func goToProfile(button: UIBarButtonItem) {
+        
     }
     
     // MARK: - SwipeDelegate
