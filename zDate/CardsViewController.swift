@@ -22,6 +22,7 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
     
     var backCard: Card?
     var frontCard: Card?
+    var users: [User]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,11 +34,10 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
         frontCard = createCard(frontCardTopMargin)
         cardStackView.addSubview(frontCard!.swipeView)
         
-//        let testObject = PFObject(className: "TestObject")
-//        testObject["foo"] = "bar"
-//        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError!) -> Void in
-//            println("Object has been saved.")
-//        }
+        fetchUnviewedUsers { (users) -> () in
+            self.users = users
+            println(self.users)
+        }
     }
     
     override func viewWillAppear(animated: Bool) {
