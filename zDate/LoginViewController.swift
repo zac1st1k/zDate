@@ -57,6 +57,8 @@ class LoginViewController: UIViewController {
                         let imageFile = PFFile(name: "avatar.jpg", data: data)
                         user["picture"] = imageFile
                         user.saveInBackgroundWithBlock(nil)
+                        
+                        //refectoring
 //                        if (response != nil) {
 //                            println("Success")
 //                        }
