@@ -100,7 +100,7 @@ class SwipeView: UIView {
                 }
         })
     }
-    
+    sdfsdf
     private func updateOverlay(distance: CGFloat) {
         var newDirection: Direction
         newDirection = distance < 0 ? .Left : .Right
