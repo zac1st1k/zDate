@@ -40,7 +40,7 @@ func currentUser() -> User? {
 func fetchUnviewedUsers(callback: ([User]) -> ()) {
     PFQuery(className: "Action").whereKey("byUser", equalTo: PFUser.currentUser().objectId).findObjectsInBackgroundWithBlock { (objects, error) -> Void in
         let seenIDS = map(objects, {$0.objectForKey("toUser")!})
-    
+    yryryt
     
     PFUser.query().whereKey("objectId", notEqualTo: PFUser.currentUser().objectId).whereKey("objectId", notContainedIn: seenIDS).findObjectsInBackgroundWithBlock { (objects, error) -> Void in
         if let pfUsers = objects as? [PFUser] {
