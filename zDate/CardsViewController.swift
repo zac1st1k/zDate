@@ -33,6 +33,10 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
 
         // Do any additional setup after loading the view.
         cardStackView.backgroundColor = UIColor.clearColor()
+        
+        nahButton.setImage(UIImage(named: "nah-button-pressed"), forState: UIControlState.Highlighted)
+        yeahButton.setImage(UIImage(named: "yeah-button-pressed"), forState: UIControlState.Highlighted)
+        
 //        backCard = createCard(backCardTopMargin)
 //        cardStackView.addSubview(backCard!.swipeView)
 //        frontCard = createCard(frontCardTopMargin)
@@ -67,9 +71,15 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
     }
     
     @IBAction func nahButtonPressed(sender: UIButton) {
+        if let card = frontCard {
+            card.swipeView.swipe(SwipeView.Direction.Left)
+        }
     }
 
     @IBAction func yeahButtonPressed(sender: UIButton) {
+        if let card = frontCard {
+            card.swipeView.swipe(SwipeView.Direction.Right)
+        }
     }
     
     /*
