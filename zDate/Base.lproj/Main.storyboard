@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gfN-C5-6GV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gfN-C5-6GV">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -25,16 +25,40 @@
                                     <constraint firstAttribute="width" constant="240" id="OlC-fI-7Zb"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYT-jz-DWS">
+                                <rect key="frame" x="40" y="385" width="75" height="75"/>
+                                <state key="normal" image="nah-button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nahButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xsw-hu-a58"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZw-Ox-VbM">
+                                <rect key="frame" x="205" y="385" width="75" height="75"/>
+                                <state key="normal" image="yeah-button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="yeahButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GMj-lI-usO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DZw-Ox-VbM" secondAttribute="bottom" constant="20" id="TGf-VA-byC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DZw-Ox-VbM" secondAttribute="trailing" constant="24" id="UpE-6D-Pvm"/>
                             <constraint firstItem="QUr-tG-TIP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="b9y-bZ-ff1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aYT-jz-DWS" secondAttribute="bottom" constant="20" id="fr9-do-BGO"/>
                             <constraint firstAttribute="centerX" secondItem="QUr-tG-TIP" secondAttribute="centerX" id="wRe-U2-akd"/>
+                            <constraint firstItem="aYT-jz-DWS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="ykZ-GR-l51"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Pm0-P3-Lkl"/>
                     <connections>
                         <outlet property="cardStackView" destination="QUr-tG-TIP" id="Kyi-hN-A3R"/>
+                        <outlet property="nahButton" destination="aYT-jz-DWS" id="KKo-YI-BVa"/>
+                        <outlet property="yeahButton" destination="DZw-Ox-VbM" id="OxK-Ja-6NS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -179,4 +203,8 @@
             <point key="canvasLocation" x="692" y="449"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nah-button" width="75" height="75"/>
+        <image name="yeah-button" width="75" height="75"/>
+    </resources>
 </document>

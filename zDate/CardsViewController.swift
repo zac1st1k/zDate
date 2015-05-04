@@ -11,6 +11,9 @@ import Parse
 
 class CardsViewController: UIViewController, SwipeViewDelegate {
     
+    @IBOutlet weak var nahButton: UIButton!
+    @IBOutlet weak var yeahButton: UIButton!
+    
     struct Card {
         let cardView: CardView
         let swipeView: SwipeView
@@ -63,7 +66,12 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func nahButtonPressed(sender: UIButton) {
+    }
 
+    @IBAction func yeahButtonPressed(sender: UIButton) {
+    }
+    
     /*
     // MARK: - Navigation
 
