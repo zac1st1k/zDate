@@ -61,7 +61,7 @@ func saveSkip(user: User) {
     skip.setObject(user.id, forKey: "toUser")
     skip.setObject("skipped", forKey: "type")
     skip.saveInBackgroundWithBlock(nil)
-}
+}23232
 
 func saveLike(user: User) {
     PFQuery(className: "Action")
