@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		111690921AD14008002CA865 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111690911AD14008002CA865 /* CardsViewController.swift */; };
 		114BD2171AD95A6100864AE0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114BD2161AD95A6100864AE0 /* LoginViewController.swift */; };
+		117780331AFB9F4B00F5863B /* MatchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117780321AFB9F4B00F5863B /* MatchesTableViewController.swift */; };
+		117780351AFBA0D800F5863B /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117780341AFBA0D800F5863B /* UserCell.swift */; };
 		119CCB8C1AD6AE31007054FB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119CCB8B1AD6AE31007054FB /* AudioToolbox.framework */; };
 		119CCB8E1AD6AE38007054FB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119CCB8D1AD6AE38007054FB /* CFNetwork.framework */; };
 		119CCB901AD6AE3E007054FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119CCB8F1AD6AE3E007054FB /* CoreGraphics.framework */; };
@@ -49,6 +51,8 @@
 /* Begin PBXFileReference section */
 		111690911AD14008002CA865 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		114BD2161AD95A6100864AE0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		117780321AFB9F4B00F5863B /* MatchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesTableViewController.swift; sourceTree = "<group>"; };
+		117780341AFBA0D800F5863B /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		119CCB8B1AD6AE31007054FB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		119CCB8D1AD6AE38007054FB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		119CCB8F1AD6AE3E007054FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,6 +122,7 @@
 		111690901AD13FCB002CA865 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				117780321AFB9F4B00F5863B /* MatchesTableViewController.swift */,
 				114BD2161AD95A6100864AE0 /* LoginViewController.swift */,
 				11F5F1711ACEBA0A00AF1C57 /* ViewController.swift */,
 				111690911AD14008002CA865 /* CardsViewController.swift */,
@@ -222,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				11F5F1911ACEBC6A00AF1C57 /* CardView.swift */,
+				117780341AFBA0D800F5863B /* UserCell.swift */,
 				11C801771AD010F600F1768B /* SwipeView.swift */,
 			);
 			name = Views;
@@ -375,11 +381,13 @@
 			files = (
 				114BD2171AD95A6100864AE0 /* LoginViewController.swift in Sources */,
 				11F5F1721ACEBA0A00AF1C57 /* ViewController.swift in Sources */,
+				117780331AFB9F4B00F5863B /* MatchesTableViewController.swift in Sources */,
 				11C801781AD010F600F1768B /* SwipeView.swift in Sources */,
 				111690921AD14008002CA865 /* CardsViewController.swift in Sources */,
 				11F5F1921ACEBC6A00AF1C57 /* CardView.swift in Sources */,
 				11F5F1701ACEBA0A00AF1C57 /* AppDelegate.swift in Sources */,
 				11BF16881ADBE88D00FCBAC9 /* ProfileViewController.swift in Sources */,
+				117780351AFBA0D800F5863B /* UserCell.swift in Sources */,
 				11BF16861ADBE61000FCBAC9 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
