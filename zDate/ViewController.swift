@@ -37,7 +37,6 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
         let previousVC = pageViewController(self, viewControllerBeforeViewController: viewControllers[0] as UIViewController)!
         setViewControllers([previousVC], direction: UIPageViewControllerNavigationDirection.Reverse, animated: true, completion: nil)
     }
-    
     // MARK: - UIPageViewControllerDataSource
 
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
