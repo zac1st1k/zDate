@@ -23,5 +23,18 @@ class UserCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        avatarImageView.layer.cornerRadius = avatarImageView.frame.height / 2
+        avatarImageView.layer.masksToBounds = true
+    }
+    
+    navigationItem.titleView = UIImageView(image: UIImage(named: "chat-header"))
+    let leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav-back-button"), style: UIBarButtonItemStyle.Plain, target: self, action: "goToPreviousVC:")
+    navigationItem.setLeftBarButtonItem(leftBarButtonItem, animated: true)
+    func goToPreviousVC(button: UIBarButtonItem) {
+        pageController.goToPreviousVC()
+    }
 
 }
