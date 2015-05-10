@@ -29,12 +29,4 @@ class UserCell: UITableViewCell {
         avatarImageView.layer.cornerRadius = avatarImageView.frame.height / 2
         avatarImageView.layer.masksToBounds = true
     }
-    
-    navigationItem.titleView = UIImageView(image: UIImage(named: "chat-header"))
-    let leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav-back-button"), style: UIBarButtonItemStyle.Plain, target: self, action: "goToPreviousVC:")
-    navigationItem.setLeftBarButtonItem(leftBarButtonItem, animated: true)
-    func goToPreviousVC(button: UIBarButtonItem) {
-        pageController.goToPreviousVC()
-    }
-
 }

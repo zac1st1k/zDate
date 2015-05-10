@@ -21,6 +21,7 @@ class MatchesTableViewController: UITableViewController {
         
         navigationItem.titleView = UIImageView(image: UIImage(named: "chat-header"))
         let leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav-back-button"), style: UIBarButtonItemStyle.Plain, target: self, action: "goToPreviousVC:")
+        navigationItem.setLeftBarButtonItem(leftBarButtonItem, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
