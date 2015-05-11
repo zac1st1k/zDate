@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		111690921AD14008002CA865 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111690911AD14008002CA865 /* CardsViewController.swift */; };
 		114BD2171AD95A6100864AE0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114BD2161AD95A6100864AE0 /* LoginViewController.swift */; };
+		11593D521B00DC3700A32CB9 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11593D511B00DC3700A32CB9 /* Match.swift */; };
 		117780331AFB9F4B00F5863B /* MatchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117780321AFB9F4B00F5863B /* MatchesTableViewController.swift */; };
 		117780351AFBA0D800F5863B /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117780341AFBA0D800F5863B /* UserCell.swift */; };
 		119CCB8C1AD6AE31007054FB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119CCB8B1AD6AE31007054FB /* AudioToolbox.framework */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		111690911AD14008002CA865 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		114BD2161AD95A6100864AE0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		11593D511B00DC3700A32CB9 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		117780321AFB9F4B00F5863B /* MatchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesTableViewController.swift; sourceTree = "<group>"; };
 		117780341AFBA0D800F5863B /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		119CCB8B1AD6AE31007054FB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				11BF16851ADBE61000FCBAC9 /* User.swift */,
+				11593D511B00DC3700A32CB9 /* Match.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				11F5F1921ACEBC6A00AF1C57 /* CardView.swift in Sources */,
 				11F5F1701ACEBA0A00AF1C57 /* AppDelegate.swift in Sources */,
 				11BF16881ADBE88D00FCBAC9 /* ProfileViewController.swift in Sources */,
+				11593D521B00DC3700A32CB9 /* Match.swift in Sources */,
 				117780351AFBA0D800F5863B /* UserCell.swift in Sources */,
 				11BF16861ADBE61000FCBAC9 /* User.swift in Sources */,
 			);

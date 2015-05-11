@@ -51,7 +51,7 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
             return nil
         }
     }
-   sjdlfjlkj
+
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         switch viewController {
         case cardsVC:
